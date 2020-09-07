@@ -1,18 +1,24 @@
 #include <stdio.h>
 #include <string.h>
-
-int main()
+void numbnumber(void);
+struct number
 {
-    struct number
-    {
     int fa, sum;
     char sumnum;
     char num[50];
-    }numb;
+}numb;
+int main()
+{
     printf("Input number: ");
     gets_s(numb.num);
     numb.fa = strlen(numb.num);
     printf("OutPut \n ");
+    numbnumber();
+
+}
+
+void numbnumber()
+{
     for (int j = 0; j < numb.fa; j++) {
 
         numb.sumnum = numb.num[j];
@@ -36,5 +42,6 @@ int main()
 
 
     }
+
 
 }
